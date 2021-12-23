@@ -71,14 +71,21 @@
 
 #bisect 데이터 개수 구하기
 
-from bisect import bisect_left, bisect_right
+# from bisect import bisect_left, bisect_right
+#
+# def count(data, left, right):
+#     left_index = bisect_left(data, left)
+#     right_index = bisect_right(data, right)
+#     return right_index - left_index
+#
+# data = [1, 2, 3, 3, 3, 3, 4, 4, 8, 9]
+#
+# print(count(data, 3, 3))
+# print(count(data, -1, 3))
 
-def count(data, left, right):
-    left_index = bisect_left(data, left)
-    right_index = bisect_right(data, right)
-    return right_index - left_index
+#입력 데이터가 많을 때
 
-data = [1, 2, 3, 3, 3, 3, 4, 4, 8, 9]
+import sys
 
-print(count(data, 3, 3))
-print(count(data, -1, 3))
+data = sys.stdin.readline().rstrip()
+print(data)
